@@ -1,1 +1,5 @@
 Training a transformer-based language model using PyTorch and Hugging Face Transformers library. The model is trained to predict the next word in a sequence.
+
+![image](https://github.com/user-attachments/assets/9bcea471-c0b5-4f38-8ad1-0baf6bbc50f9)
+
+A flow diagram representing the process of text generation using a transformer model. The diagram starts with a dataset loading step, depicted as a block labeled 'Load Dataset (Wikipedia Articles)' with arrows leading to the next step, 'Initialize Tokenizer (DistilBERT).' From here, an arrow points to 'Tokenize Dataset,' followed by 'Define Custom Dataset (TextDataset)' in a rectangle. Next, there’s a connection to 'Create DataLoader,' which branches out to two parallel paths: 'Train Transformer Model' (looped for multiple epochs with substeps for forward pass, loss computation, backward pass, and parameter update) and 'Generate Text.' The 'Generate Text' block includes substeps for tokenizing input text, predicting the next token, appending it to the sequence, and decoding the final text. Arrows connect all steps sequentially, with a clear flow from dataset to model training and finally to text generation.
